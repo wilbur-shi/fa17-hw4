@@ -1,0 +1,23 @@
+<h1>Cats:</h1>
+<% @cats.each do |cat| %>
+	<%= cat.name %> 
+	<br/>
+<% end %>
+
+<h1>Users:</h1>
+<% @users.each do |user| %>
+	Username: <%= user.username %> 
+	<br/>
+	Email: <%= user.email %>
+	<br/><br/>
+<% end %>
+
+<h1>Todos:</h1>
+<% @todos.each do |todo| %>
+	<%= todo.tasks %> 
+	<br/>
+	<%= todo.finished %>
+	<br/><br/>
+<% end  %>
+
+<%= link_to("swagout", "/todos/new") %>
